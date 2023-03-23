@@ -31,7 +31,7 @@ const Navbar = () => {
             <li>
               <Link
                 href="#hey"
-                className="block py-2 pl-3 pr-4 text-white  rounded md:bg-transparent  md:p-0 "
+                className="block py-2 pl-3 pr-4 text-white  rounded md:bg-transparent  md:p-0 hover:border-b-4 hover:border-b-white"
                 aria-current="page"
               >
                 Home
