@@ -13,7 +13,7 @@ const sendEmail = async (req: NextApiRequest, res: NextApiResponse) => {
       const msg = {
         to: "johnsanchezdev15@gmail.com",
         from: "johnsanchezdev15@gmail.com",
-        subject: `New Message! ${req.body.subject}`,
+        subject: `New Message: ${req.body.subject}`,
         html: `<p>Name: ${req.body.fullName}</p><br /><p>Message: ${req.body.message}</p><br /><p>Email: ${req.body.email}</p> `,
       };
       await sgMail.send(msg).catch((error: any) => console.log(error));
