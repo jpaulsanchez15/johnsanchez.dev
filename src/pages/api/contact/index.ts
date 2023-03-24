@@ -3,8 +3,8 @@ import { type NextApiRequest, type NextApiResponse } from "next";
 import { SESClient, SendEmailCommand } from "@aws-sdk/client-ses";
 config();
 
-const AWS_ACCESS_KEY = process.env.AWS_ACCESS_KEY || "";
-const AWS_SECRET_KEY = process.env.AWS_SECRET_KEY || "";
+const AWS_ACCESS_KEY = process.env.AWS_ACCESS_KEY_ID || "";
+const AWS_SECRET_KEY = process.env.AWS_SECRET_KEY_ID || "";
 
 const sendEmail = async (req: NextApiRequest, res: NextApiResponse) => {
   if (req.method !== "POST") {
@@ -19,7 +19,22 @@ const sendEmail = async (req: NextApiRequest, res: NextApiResponse) => {
     });
     console.log({ ...req.body });
     try {
-      client.send(new SendEmailCommand({ ...req.body }));
+      client.send(new SendEmailCommand({
+        Destination: {
+          ToAddresses: ["jpsanchez1122@gmail.com"],
+        },
+        Message: {
+          Body: {
+            Text: {
+              Data: `Name: ${req.body.name} \nEmail: ${req.body.email} \nMessage: ${req.body.message}`,
+            },
+          },
+          Subject: {
+            Data: "New message from your website!",
+          },
+        },
+        Source: " ",
+       }));
       res.status(200).json({ message: "Email successfully sent! Thank you!" });
     } catch (error) {
       res.status(500).json({ error: error });

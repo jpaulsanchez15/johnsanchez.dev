@@ -15,6 +15,7 @@ const Contact = () => {
     subject: "",
     message: "",
   });
+  const [statusMessage, setStatusMessage] = React.useState<string>("");
 
   const handleFormSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -29,9 +30,11 @@ const Contact = () => {
       }),
     });
 
-    const data = await res.json();
-
-    console.log(data);
+    if (!res.ok) {
+      setStatusMessage("Something went wrong, please try again later.");
+    } else {
+      setStatusMessage("We recieved your message! Thank you!");
+    }
 
     return;
   };
@@ -117,6 +120,9 @@ const Contact = () => {
           >
             Send
           </button>
+          <p className="text-white block">
+            {statusMessage != "" ? statusMessage : null}
+          </p>
         </div>
       </form>
     </>

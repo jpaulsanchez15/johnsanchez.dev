@@ -3,11 +3,11 @@ import Head from "next/head";
 import Link from "next/link";
 
 import Pane from "@/components/Pane";
+import Contact from "@/components/Contact";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
-import Contact from "@/components/Contact";
 
 const Home: NextPage = () => {
   return (
@@ -35,7 +35,7 @@ const Home: NextPage = () => {
             rel="noopener noreferrer"
           >
             <FontAwesomeIcon
-              className="hover:bg-gray-600 py-2 pl-3 pr-3 pb-2"
+              className="hover:bg-gray-800 py-2 pl-3 pr-3 pb-2"
               size="3x"
               color="white"
               icon={faGithub}
@@ -47,7 +47,7 @@ const Home: NextPage = () => {
             rel="noopener noreferrer"
           >
             <FontAwesomeIcon
-              className="hover:bg-gray-600 py-2 pl-3 pr-3 pb-2"
+              className="hover:bg-gray-800 py-2 pl-3 pr-3 pb-2"
               size="3x"
               color="white"
               icon={faLinkedin}
