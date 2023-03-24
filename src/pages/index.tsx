@@ -2,8 +2,8 @@ import { type NextPage } from "next";
 import Head from "next/head";
 import Link from "next/link";
 
-import Pane from "@/components/Pane";
 import Contact from "@/components/Contact";
+import Card from "@/components/Card";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
@@ -56,6 +56,54 @@ const Home: NextPage = () => {
         </div>
       </header>
       <main>
+        <h1
+          id="about"
+          className="block mt-12 text-5xl text-gray-300 text-center font-extrabold"
+        >
+          About me
+        </h1>
+        <section>
+          <div className="flex text-xl flex-col items-center justify-center mt-12">
+            <div className="flex flex-col items-center justify-center space-y-4">
+              <p className="text-center w-1/3 text-gray-300 font-semibold">
+                I&apos;m a software developer with a passion for collaboration
+                and learning. I&apos;m an avid gamer, reader, and love to build
+                PC&apos;s.
+              </p>
+            </div>
+          </div>
+        </section>
+        <h1
+          id="about"
+          className="block mt-12 text-5xl text-gray-300 text-center font-extrabold"
+        >
+          Projects
+        </h1>
+        <div className="flex justify-center gap-4 mt-12">
+          <Card
+            href="https://github.com/jpaulsanchez15/forward-science-automation"
+            title="Internal Use Application"
+            description="Increased order processing efficiency by 70%. Improved deliquent payment recovery by 40%. Reduced need for manual data entry by 90%. Did the work of 3 employees, which saved us money."
+          />
+          <Card
+            href="https://github.com/jpaulsanchez15/sales-display"
+            title="Sales Display for Stakeholders"
+            description="Displayed on a TV for stakeholders, potential investors, partners, and clients to see the current trends in sales."
+          />
+        </div>
+
+        {/* <div className="flex justify-center gap-4 mt-6">
+          <Card
+            href="https://google.com"
+            title="test"
+            description="jkasdfjkasjdf jadsjfajsdfjas "
+          />
+          <Card
+            href="https://google.com"
+            title="test"
+            description="jkasdfjkasjdf jadsjfajsdfjas "
+          />
+        </div> */}
         <Contact />
       </main>
     </>

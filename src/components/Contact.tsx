@@ -47,7 +47,7 @@ const Contact = () => {
       <form
         id="contact"
         onSubmit={handleFormSubmit}
-        className="rounded-lg shadow-xl flex flex-col w-1/2 m-auto mt-12 px-8 py-8 border border-gray-600"
+        className="rounded-lg shadow-xl flex flex-col w-1/2 m-auto mt-12 mb-8 px-8 py-8 border border-gray-600"
       >
         <h1 className="text-2xl font-bold dark:text-gray-50">Contact me</h1>
 
