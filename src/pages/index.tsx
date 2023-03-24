@@ -20,7 +20,7 @@ const Home: NextPage = () => {
         />
       </Head>
       <header id="home">
-        <h1 className="text-center mt-12 text-4xl font-extrabold tracking-tight text-white m-auto">
+        <h1 className="text-center ml-3 mr-3 mt-12 text-4xl font-extrabold tracking-tight text-white m-auto">
           <span className="block bg-gradient-to-r from-white via-orange-300 to-red-600 bg-clip-text text-8xl text-transparent">
             Hi, I&apos;m John Sanchez
           </span>
