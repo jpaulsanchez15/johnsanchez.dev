@@ -1,5 +1,4 @@
 import React from "react";
-// import Head from "next/head";
 
 type Form = {
   fullName: string;
@@ -41,9 +40,6 @@ const Contact = () => {
 
   return (
     <>
-      {/* <Head>
-        <title>John Sanchez | Contact</title>
-      </Head> */}
       <form
         id="contact"
         onSubmit={handleFormSubmit}
@@ -60,6 +56,7 @@ const Contact = () => {
         <input
           type="text"
           name="full-name"
+          autoComplete="given-name"
           onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
             setForm({ ...form, fullName: e.target.value })
           }
@@ -71,11 +68,12 @@ const Contact = () => {
           htmlFor="email"
           className="text-gray-500 font-light mt-4 dark:text-gray-50"
         >
-          E-mail<span className="text-red-500">*</span>
+          E-mail
         </label>
         <input
           type="email"
           name="email"
+          autoComplete="email"
           onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
             setForm({ ...form, email: e.target.value })
           }
@@ -87,7 +85,7 @@ const Contact = () => {
           htmlFor="subject"
           className="text-gray-500 font-light mt-4 dark:text-gray-50"
         >
-          Subject<span className="text-red-500">*</span>
+          Subject
         </label>
         <input
           type="text"
@@ -103,7 +101,7 @@ const Contact = () => {
           htmlFor="message"
           className="text-gray-500 font-light mt-4 dark:text-gray-50"
         >
-          Message<span className="text-red-500">*</span>
+          Message
         </label>
         <textarea
           name="message"
