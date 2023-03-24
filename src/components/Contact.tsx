@@ -123,9 +123,7 @@ const Contact = () => {
           </button>
           <div className="flex flex-row">
             <p className="text-white ml-2 mt-2 font-semibold w-full">
-              {statusMessage != ""
-                ? statusMessage
-                : "We recieved your message! Thank you!"}
+              {statusMessage != "" ? statusMessage : null}
             </p>
           </div>
         </div>

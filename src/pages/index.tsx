@@ -21,10 +21,10 @@ const Home: NextPage = () => {
       </Head>
       <header id="home">
         <h1 className="text-center ml-3 mr-3 mt-12 text-4xl font-extrabold tracking-tight text-white m-auto">
-          <span className="block bg-gradient-to-r from-white via-orange-300 to-red-600 bg-clip-text text-8xl text-transparent">
+          <span className="block bg-gradient-to-r from-white via-orange-300 to-red-600 bg-clip-text text-6xl md:text-8xl text-transparent">
             Hi, I&apos;m John Sanchez
           </span>
-          <span className="block mt-3 text-6xl text-slate-100">
+          <span className="block mt-3 text-4xl md:text-8xl text-slate-100">
             Software Developer
           </span>
         </h1>
@@ -58,12 +58,12 @@ const Home: NextPage = () => {
       <main>
         <h1
           id="about"
-          className="block mt-12 text-5xl text-slate-100 text-center font-extrabold"
+          className="block mt-12 text-3xl md:text-5xl text-slate-100 text-center font-extrabold"
         >
           About me
         </h1>
         <section>
-          <div className="flex text-xl flex-col items-center justify-center mt-12">
+          <div className="flex text-l md:text-xl flex-col items-center justify-center mt-12">
             <div className="flex flex-col items-center justify-center space-y-4">
               <p className="text-center w-1/3 text-slate-200 font-semibold">
                 I&apos;m a software developer with a passion for collaboration
