@@ -78,12 +78,10 @@ const Home: NextPage = () => {
         </h1>
         <div className="flex justify-center gap-4 mt-12">
           <Card
-            href="https://github.com/jpaulsanchez15/forward-science-automation"
             title="Internal Use Application"
             description="Increased order processing efficiency by 70%. Improved delinquent payment recovery by 40%. Reduced need for manual data entry by 90%. Did the work of 3 employees, which saved us money."
           />
           <Card
-            href="https://github.com/jpaulsanchez15/sales-display"
             title="Sales Growth Display"
             description="Displayed on a TV for stakeholders, potential investors, partners, and clients to see the current trends in sales."
           />

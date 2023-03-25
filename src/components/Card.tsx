@@ -1,5 +1,5 @@
 type Props = {
-  href: string;
+  href?: string;
   title: string;
   description: string;
 };
