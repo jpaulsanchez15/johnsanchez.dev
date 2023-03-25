@@ -1,4 +1,4 @@
-import React from "react";
+import { useState } from "react";
 
 type Form = {
   fullName: string;
@@ -8,14 +8,14 @@ type Form = {
 };
 
 const Contact = () => {
-  const [form, setForm] = React.useState<Form>({
+  const [form, setForm] = useState<Form>({
     fullName: "",
     email: "",
     subject: "",
     message: "",
   });
-  const [loading, isLoading] = React.useState<boolean>(false);
-  const [statusMessage, setStatusMessage] = React.useState<string>("");
+  const [loading, isLoading] = useState<boolean>(false);
+  const [statusMessage, setStatusMessage] = useState<string>("");
 
   const handleFormSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();

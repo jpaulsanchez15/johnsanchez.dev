@@ -4,7 +4,6 @@ const Navbar = () => {
   return (
     <nav className="px-2 sm:px-4 py-2.5 rounded sticky top-0 z-50 backdrop-blur-sm w-full">
       <div className="flex flex-row items-center text-center justify-center">
-        {/* <div className=" w-full md:block md:w-auto"> */}
         <ul className="flex flex-row p-4 mt-4 rounded-lg items-center md:flex-row md:space-x-8 md:mt-0 text-xl md:font-medium md:border-0  ">
           <li>
             <Link
@@ -33,7 +32,6 @@ const Navbar = () => {
           </li>
         </ul>
       </div>
-      {/* </div> */}
     </nav>
   );
 };
