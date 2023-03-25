@@ -12,13 +12,6 @@ import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 const Home: NextPage = () => {
   return (
     <>
-      <Head>
-        <title>John Sanchez | Welcome</title>
-        <meta
-          name="description"
-          content="Welcome to John Sanchez's developer page."
-        />
-      </Head>
       <div id="home" className="p-7 md:p-5" />
       <header>
         <h1 className="text-center ml-3 mr-3 mt-12 text-4xl font-extrabold tracking-tight text-white m-auto">
