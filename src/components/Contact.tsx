@@ -51,7 +51,6 @@ const Contact = () => {
   return (
     <>
       <form
-        id="contact"
         onSubmit={handleFormSubmit}
         className="rounded-lg shadow-xl flex flex-col w-1/1 ml-3 mr-3 md:w-1/2 md:m-auto md:mt-12 md:mb-8 mt-12 mb-8 px-8 py-8 border border-gray-600"
       >

@@ -13,18 +13,19 @@ const Home: NextPage = () => {
   return (
     <>
       <Head>
-        <title>John Sanchez | Home</title>
+        <title>John Sanchez | Welcome</title>
         <meta
           name="description"
           content="Welcome to John Sanchez's developer page."
         />
       </Head>
-      <header id="home">
+      <div id="home" className="p-7 md:p-5" />
+      <header>
         <h1 className="text-center ml-3 mr-3 mt-12 text-4xl font-extrabold tracking-tight text-white m-auto">
           <span className="block bg-gradient-to-r from-white via-orange-300 to-red-600 bg-clip-text text-6xl md:text-8xl text-transparent">
             Hi, I&apos;m John Sanchez
           </span>
-          <span className="block mt-3 text-4xl md:text-8xl text-slate-100">
+          <span className="block mt-3 text-4xl md:text-6xl text-slate-100">
             Software Developer
           </span>
         </h1>
@@ -56,12 +57,11 @@ const Home: NextPage = () => {
         </div>
       </header>
       <main>
-        <h1
-          id="about"
-          className="block mt-12 text-3xl md:text-5xl text-slate-100 text-center font-extrabold"
-        >
+        <div id="about" className="p-7" />
+        <h1 className="block mt-12 text-3xl md:text-5xl text-slate-100 text-center font-extrabold">
           About me
         </h1>
+
         <section>
           <div className="flex text-l md:text-xl flex-col items-center justify-center mt-12">
             <div className="flex flex-col items-center justify-center space-y-4">
@@ -73,21 +73,18 @@ const Home: NextPage = () => {
             </div>
           </div>
         </section>
-        <h1
-          id="about"
-          className="block mt-12 text-5xl text-slate-100 text-center font-extrabold"
-        >
+        <h1 className="block mt-12 text-5xl text-slate-100 text-center font-extrabold">
           Projects
         </h1>
         <div className="flex justify-center gap-4 mt-12">
           <Card
             href="https://github.com/jpaulsanchez15/forward-science-automation"
             title="Internal Use Application"
-            description="Increased order processing efficiency by 70%. Improved deliquent payment recovery by 40%. Reduced need for manual data entry by 90%. Did the work of 3 employees, which saved us money."
+            description="Increased order processing efficiency by 70%. Improved delinquent payment recovery by 40%. Reduced need for manual data entry by 90%. Did the work of 3 employees, which saved us money."
           />
           <Card
             href="https://github.com/jpaulsanchez15/sales-display"
-            title="Sales Display for Stakeholders"
+            title="Sales Growth Display"
             description="Displayed on a TV for stakeholders, potential investors, partners, and clients to see the current trends in sales."
           />
         </div>
@@ -104,7 +101,9 @@ const Home: NextPage = () => {
             description="jkasdfjkasjdf jadsjfajsdfjas "
           />
         </div> */}
-        <Contact />
+        <div id="contact">
+          <Contact />
+        </div>
       </main>
     </>
   );
