@@ -50,7 +50,7 @@ const Home: NextPage = () => {
       </header>
       <main>
         <div id="about" className="p-7" />
-        <h1 className="block mt-12 text-3xl md:text-5xl text-slate-100 text-center font-extrabold">
+        <h1 className="block mt-12 text-5xl text-slate-100 text-center font-extrabold">
           About me
         </h1>
 
