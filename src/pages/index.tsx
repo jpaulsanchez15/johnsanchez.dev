@@ -56,9 +56,9 @@ const Home: NextPage = () => {
         </h1>
 
         <section>
-          <div className="flex text-l md:text-xl flex-col items-center justify-center mt-12">
+          <div className="flex text-2xl md:text-2xl flex-col items-center justify-center mt-12">
             <div className="flex flex-col items-center justify-center space-y-4">
-              <p className="text-center w-1/3 text-slate-200 font-semibold">
+              <p className="text-center w-1/2 text-slate-200 font-semibold">
                 I&apos;m a software developer with a passion for collaboration
                 and learning. I&apos;m an avid gamer, reader, and love to build
                 PC&apos;s.
@@ -69,13 +69,17 @@ const Home: NextPage = () => {
         <h1 className="block mt-12 text-5xl text-slate-100 text-center font-extrabold">
           Projects
         </h1>
-        <div className="flex justify-center gap-4 mt-12">
+        <div className="flex flex-col mx-12 md:flex md:justify-center md:w-1/2 md:items-center md:m-auto md:mt-12 gap-4 mt-12">
           <Card
             title="Internal Use Application"
+            href={
+              "https://github.com/jpaulsanchez15/forward-science-automation-public"
+            }
             description="Increased order processing efficiency by 70%. Improved delinquent payment recovery by 40%. Reduced need for manual data entry by 90%. Did the work of 3 employees, which saved us money."
           />
           <Card
             title="Sales Growth Display"
+            href={"https://github.com/jpaulsanchez15/sales-display-public"}
             description="Displayed on a TV for stakeholders, potential investors, partners, and clients to see the current trends in sales."
           />
         </div>
