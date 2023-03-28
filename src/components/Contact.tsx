@@ -52,7 +52,7 @@ const Contact = () => {
     <>
       <form
         onSubmit={handleFormSubmit}
-        className="rounded-lg shadow-xl flex flex-col w-1/1 ml-3 mr-3 md:w-1/2 md:m-auto md:mt-12 md:mb-8 mt-12 mb-8 px-8 py-8 border border-gray-600"
+        className="rounded-lg shadow-sm hover:border-amber-600 hover:shadow-white flex flex-col w-1/1 ml-3 mr-3 md:w-1/2 md:m-auto md:mt-12 md:mb-8 mt-12 mb-8 px-8 py-8 border border-gray-600"
       >
         <h1 className="text-2xl font-bold text-slate-100 ">Contact me</h1>
 
