@@ -48,11 +48,12 @@ const Home: NextPage = () => {
           </Link>
         </div>
       </header>
+
       <main>
         <div id="about" className="p-7" />
-        <h1 className="block mt-12 text-5xl text-slate-100 text-center font-extrabold">
+        <h2 className="block mt-12 text-5xl text-slate-100 text-center font-extrabold">
           About me
-        </h1>
+        </h2>
 
         <section>
           <div className="flex text-2xl md:text-2xl flex-col items-center justify-center mt-12">
@@ -65,10 +66,11 @@ const Home: NextPage = () => {
             </div>
           </div>
         </section>
-        <h1 className="block mt-12 text-5xl text-slate-100 text-center font-extrabold">
+
+        <h2 className="block mt-12 text-5xl text-slate-100 text-center font-extrabold">
           Projects
-        </h1>
-        <div className="flex flex-col mx-12 md:flex md:justify-center md:w-1/2 md:items-center md:m-auto md:mt-12 gap-4 mt-12">
+        </h2>
+        <section className="flex flex-col mx-12 md:flex md:flex-row md:items-stretch md:w-1/2 md:m-auto md:mt-12 gap-4 mt-12">
           <Card
             title="Internal Use Application"
             href={
@@ -81,23 +83,11 @@ const Home: NextPage = () => {
             href={"https://github.com/jpaulsanchez15/sales-display-public"}
             description="Displayed on a TV for stakeholders, potential investors, partners, and clients to see the current trends in sales."
           />
-        </div>
+        </section>
 
-        {/* <div className="flex justify-center gap-4 mt-6">
-          <Card
-            href="https://google.com"
-            title="test"
-            description="jkasdfjkasjdf jadsjfajsdfjas "
-          />
-          <Card
-            href="https://google.com"
-            title="test"
-            description="jkasdfjkasjdf jadsjfajsdfjas "
-          />
-        </div> */}
-        <div id="contact">
+        <section id="contact">
           <Contact />
-        </div>
+        </section>
       </main>
     </>
   );

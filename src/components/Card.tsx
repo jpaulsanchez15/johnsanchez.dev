@@ -1,5 +1,5 @@
 type Props = {
-  href?: string;
+  href: string;
   title: string;
   description: string;
 };
@@ -10,7 +10,7 @@ const Card = (props: Props) => {
       target="_blank"
       rel="noopener noreferrer"
       href={props.href}
-      className="block max-h-full w-full md:w-1/2 p-6 bg-transparent border border-gray-600 rounded-lg shadow hover:shadow-xs hover:shadow-white"
+      className="block w-full md:w-1/2  p-6 bg-transparent border border-gray-600 rounded-lg shadow-sm hover:shadow-white hover:border-amber-500"
     >
       <h5 className="mb-2 text-2xl font-bold tracking-tight text-white">
         {props.title}

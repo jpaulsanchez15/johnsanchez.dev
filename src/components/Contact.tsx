@@ -116,7 +116,7 @@ const Contact = () => {
           <button
             type="submit"
             disabled={loading}
-            className="px-10 mt-8 py-2 bg-black border border-gray-600 hover:bg-gray-900 text-gray-50 font-light rounded-md text-lg flex flex-row items-center"
+            className="px-10 mt-8 py-2 bg-black border border-gray-600 hover:bg-gray-900 hover:border-amber-500 text-gray-50 font-light rounded-md text-lg flex flex-row items-center"
           >
             Send
           </button>
