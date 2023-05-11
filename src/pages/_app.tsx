@@ -9,11 +9,12 @@ const App = ({ Component, pageProps }: AppProps) => {
   return (
     <main className={inter.className}>
       <Head>
-        <title>John Sanchez | Welcome</title>
+        <title>John Sanchez | Web Developer based in Houston</title>
         <meta
           name="description"
           content="Welcome to John Sanchez's developer page."
         />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
       <Component {...pageProps} />
     </main>
