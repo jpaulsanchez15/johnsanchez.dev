@@ -18,7 +18,7 @@ const Home: NextPage = () => {
             Hi, I&apos;m John Sanchez
           </span>
           <span className="block mt-3 text-4xl md:text-6xl text-slate-100">
-            Software Developer
+            Web Developer
           </span>
         </h1>
         <div className="flex flex-row items-center justify-center mt-1 space-x-4">
@@ -59,7 +59,7 @@ const Home: NextPage = () => {
           <div className="flex text-2xl md:text-2xl flex-col items-center justify-center mt-12">
             <div className="flex flex-col items-center justify-center space-y-4">
               <p className="text-center w-1/2 text-slate-200 font-semibold">
-                I&apos;m a software developer with a passion for collaboration
+                I&apos;m a web developer with a passion for collaboration
                 and learning. I&apos;m an avid gamer, reader, and love to build
                 PC&apos;s.
               </p>
