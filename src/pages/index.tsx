@@ -2,14 +2,7 @@ import { type NextPage } from "next";
 import Link from "next/link";
 
 import Contact from "@/components/Contact";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
@@ -153,7 +146,7 @@ const Home: NextPage = () => {
             />
           ))}
         </section>
-	
+
         <section id="blog">
           <h2 className="block mt-12 text-5xl text-slate-100 text-center font-extrabold">
             Blog
