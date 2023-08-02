@@ -14,7 +14,8 @@ import { GetServerSidePropsContext } from "next";
  */
 
 const unslugify = (slug: string): string => {
-  return slug.toLowerCase().replace(/-/g, " ");
+  return slug.toLowerCase();
+  // .replace(/-/g, " ");
 };
 
 export async function getServerSideProps(context: GetServerSidePropsContext) {
@@ -24,7 +25,7 @@ export async function getServerSideProps(context: GetServerSidePropsContext) {
 
   const markdownFilePath = path.join(
     process.cwd(),
-    `/src/pages/blog/markdownFiles/${originalFileName}.md`
+    `src/pages/blog/markdownFiles/${originalFileName}.md`
   );
 
   console.log("Markdown file path:", markdownFilePath);
