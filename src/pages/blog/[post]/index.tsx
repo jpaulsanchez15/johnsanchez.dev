@@ -2,6 +2,8 @@ import ReactMarkdown from "react-markdown";
 import path from "path";
 import fs from "fs";
 
+import { GetServerSidePropsContext } from "next";
+
 /*
  * This is the individual blog post page. This will be used to display
  * the blog posts.
@@ -11,18 +13,36 @@ import fs from "fs";
  * and pass it down to the parent component.
  */
 
-export async function getServerSideProps() {
+const unslugify = (slug: string): string => {
+  return slug.toLowerCase().replace(/-/g, " ");
+};
+
+export async function getServerSideProps(context: GetServerSidePropsContext) {
+  const { post } = context.params as { post: string };
+
+  const originalFileName = unslugify(post);
+
   const markdownFilePath = path.join(
     process.cwd(),
-    "src/pages/blog/markdownFiles/pc-build.md"
+    `src/pages/blog/markdownFiles/${originalFileName}.md`
   );
-  const markdownContent = fs.readFileSync(markdownFilePath, "utf-8");
 
-  return {
-    props: {
-      markdownContent,
-    },
-  };
+  try {
+    const markdownContent = fs.readFileSync(markdownFilePath, "utf-8");
+
+    return {
+      props: {
+        markdownContent,
+      },
+    };
+  } catch (error) {
+    console.error("Error:", error);
+    return {
+      props: {
+        markdownContent: "",
+      },
+    };
+  }
 }
 
 const BlogPost = ({ markdownContent }: { markdownContent: string }) => {
