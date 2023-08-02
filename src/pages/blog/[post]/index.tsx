@@ -24,7 +24,7 @@ export async function getServerSideProps(context: GetServerSidePropsContext) {
 
   const markdownFilePath = path.join(
     process.cwd(),
-    `src/pages/blog/markdownFiles/${originalFileName}.md`
+    `/src/pages/blog/markdownFiles/${originalFileName}.md`
   );
 
   console.log("Markdown file path:", markdownFilePath);
