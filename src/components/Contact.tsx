@@ -54,14 +54,22 @@ const Contact = () => {
         onSubmit={handleFormSubmit}
         className="rounded-lg shadow-sm hover:border-amber-600 hover:shadow-white flex flex-col w-1/1 ml-3 mr-3 md:w-1/2 md:m-auto md:mt-12 md:mb-8 mt-12 mb-8 px-8 py-8 border border-gray-600"
       >
+<<<<<<< HEAD
         <h1 className="text-2xl font-bold text-slate-100 ">Contact me</h1>
 
         <label htmlFor="full-name" className="text-gray-50 font-light mt-8 ">
+=======
+        <label htmlFor="full-name" className="text-gray-50 font-light">
+>>>>>>> restore
           Name
         </label>
         <input
           type="text"
+<<<<<<< HEAD
           name="full-name"
+=======
+          id="full-name"
+>>>>>>> restore
           value={form.fullName}
           autoComplete="given-name"
           onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
@@ -76,7 +84,11 @@ const Contact = () => {
         </label>
         <input
           type="email"
+<<<<<<< HEAD
           name="email"
+=======
+          id="email"
+>>>>>>> restore
           value={form.email}
           autoComplete="email"
           onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
@@ -92,7 +104,11 @@ const Contact = () => {
         <input
           type="text"
           value={form.subject}
+<<<<<<< HEAD
           name="subject"
+=======
+          id="subject"
+>>>>>>> restore
           onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
             setForm({ ...form, subject: e.target.value })
           }
@@ -104,7 +120,11 @@ const Contact = () => {
           Message
         </label>
         <textarea
+<<<<<<< HEAD
           name="message"
+=======
+          id="message"
+>>>>>>> restore
           value={form.message}
           onChange={(e: React.ChangeEvent<HTMLTextAreaElement>) =>
             setForm({ ...form, message: e.target.value })

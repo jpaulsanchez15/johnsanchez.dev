@@ -18,12 +18,28 @@
     "@types/react": "18.0.28",
     "@types/react-dom": "18.0.11",
     "@vercel/analytics": "^1.0.1",
+<<<<<<< HEAD
     "dotenv": "^16.0.3",
     "eslint": "8.36.0",
     "eslint-config-next": "13.2.4",
     "next": "13.2.4",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+=======
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.0.0",
+    "dotenv": "^16.0.3",
+    "eslint": "8.36.0",
+    "eslint-config-next": "13.2.4",
+    "fs": "^0.0.1-security",
+    "lucide-react": "^0.263.1",
+    "next": "13.2.4",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-markdown": "^8.0.7",
+    "tailwind-merge": "^1.14.0",
+    "tailwindcss-animate": "^1.0.6",
+>>>>>>> restore
     "typescript": "5.0.2"
   },
   "devDependencies": {
