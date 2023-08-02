@@ -16,11 +16,7 @@ const sendEmail = async (req: NextApiRequest, res: NextApiResponse) => {
         subject: `New Message: ${req.body.subject}`,
         html: `<p>Name: ${req.body.fullName}</p><br /><p>Message: ${req.body.message}</p><br /><p>Email: ${req.body.email}</p> `,
       };
-<<<<<<< HEAD
-      
-=======
 
->>>>>>> restore
       await sgMail.send(msg);
 
       res.status(200).json({ message: "Email sent" });
