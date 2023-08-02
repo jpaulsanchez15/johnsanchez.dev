@@ -2,8 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-<<<<<<< HEAD
-=======
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -79,7 +77,6 @@
   }
 }
 
->>>>>>> restore
 body {
   background-color: #000000;
 }
