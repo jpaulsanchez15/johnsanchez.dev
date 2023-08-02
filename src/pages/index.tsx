@@ -1,20 +1,11 @@
-import { type NextPage } from "next";
 import Link from "next/link";
 
 import Contact from "@/components/Contact";
-<<<<<<< HEAD
-import Card from "@/components/Card";
-=======
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
->>>>>>> restore
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
-<<<<<<< HEAD
-
-const Home: NextPage = () => {
-=======
 import path from "path";
 import fs from "fs";
 
@@ -89,7 +80,6 @@ const projects: Project[] = [
 ];
 
 const Home = ({ blogFiles }: BlogProps) => {
->>>>>>> restore
   return (
     <>
       <div id="home" className="p-7 md:p-5" />
@@ -140,13 +130,8 @@ const Home = ({ blogFiles }: BlogProps) => {
           <div className="flex text-2xl md:text-2xl flex-col items-center justify-center mt-12">
             <div className="flex flex-col items-center justify-center space-y-4">
               <p className="text-center w-1/2 text-slate-200 font-semibold">
-<<<<<<< HEAD
-                I&apos;m a web developer with a passion for collaboration
-                and learning. I&apos;m an avid gamer, reader, and love to build
-=======
                 I&apos;m a web developer with a passion for collaboration and
                 learning. I&apos;m an avid gamer, reader, and love to build
->>>>>>> restore
                 PC&apos;s.
               </p>
             </div>
@@ -156,24 +141,6 @@ const Home = ({ blogFiles }: BlogProps) => {
         <h2 className="block mt-12 text-5xl text-slate-100 text-center font-extrabold">
           Projects
         </h2>
-<<<<<<< HEAD
-        <section className="flex flex-col mx-12 md:flex md:flex-row md:items-stretch md:w-1/2 md:m-auto md:mt-12 gap-4 mt-12">
-          <Card
-            title="Internal Use Application"
-            href={
-              "https://github.com/jpaulsanchez15/forward-science-automation-public"
-            }
-            description="Increased order processing efficiency by 70%. Improved delinquent payment recovery by 40%. Reduced need for manual data entry by 90%. Did the work of 3 employees, which saved us money."
-          />
-          <Card
-            title="Sales Growth Display"
-            href={"https://github.com/jpaulsanchez15/sales-display-public"}
-            description="Displayed on a TV for stakeholders, potential investors, partners, and clients to see the current trends in sales."
-          />
-        </section>
-
-        <section id="contact">
-=======
         <section className="flex flex-col items-center mx-4 my-6 m-auto justify-between">
           {projects.map((project) => (
             <Cards
@@ -208,7 +175,6 @@ const Home = ({ blogFiles }: BlogProps) => {
           <h2 className="block mt-12 text-5xl text-slate-100 text-center font-extrabold">
             Contact
           </h2>
->>>>>>> restore
           <Contact />
         </section>
       </main>
@@ -216,8 +182,6 @@ const Home = ({ blogFiles }: BlogProps) => {
   );
 };
 
-<<<<<<< HEAD
-=======
 type BlogFile = {
   fileName: string;
   content: string;
@@ -274,5 +238,4 @@ export async function getServerSideProps() {
   }
 }
 
->>>>>>> restore
 export default Home;
