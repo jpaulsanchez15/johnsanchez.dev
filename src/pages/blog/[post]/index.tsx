@@ -27,6 +27,8 @@ export async function getServerSideProps(context: GetServerSidePropsContext) {
     `src/pages/blog/markdownFiles/${originalFileName}.md`
   );
 
+  console.log("Markdown file path:", markdownFilePath);
+
   try {
     const markdownContent = fs.readFileSync(markdownFilePath, "utf-8");
 
